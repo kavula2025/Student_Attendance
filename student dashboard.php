@@ -4,7 +4,7 @@ session_start();
 require 'connection.php';
 
 if (!isset($_SESSION['role']) || $_SESSION['role'] != 'student') {
-    header("Location: login.php");
+    header("Location: login.php"); 
     exit;
 }
 
